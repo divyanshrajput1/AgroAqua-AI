@@ -1,0 +1,13 @@
+﻿# Ignore large satellite rasters (share via Google Drive instead)
+*.tif
+*.tiff
+*.npy
+*.pth
+*.pkl
+
+# Ignore Python cache & virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/

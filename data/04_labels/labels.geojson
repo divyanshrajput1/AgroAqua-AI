@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "name": "labels",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::32643"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "class_id": 0,
+        "class_name": "placeholder",
+        "notes": "Delete this placeholder polygon in QGIS after adding your real class 1-5 polygons"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [689500.0, 2552500.0],
+            [689550.0, 2552500.0],
+            [689550.0, 2552550.0],
+            [689500.0, 2552550.0],
+            [689500.0, 2552500.0]
+          ]
+        ]
+      }
+    }
+  ]
+}

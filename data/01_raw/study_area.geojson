@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "study_area",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32643" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Kothri Kalan Study Area", "description": "~20 km × 20 km bounding polygon centred on Kothri Kalan, Sehore District, Madhya Pradesh, India.  Covers surrounding agricultural fields and Parvati/Kolar catchment water bodies.", "centre_lat": 23.07, "centre_lon": 76.85 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 699910.1370136635378, 2541526.702331620734185 ], [ 699614.632827623863705, 2563675.788802070077509 ], [ 679136.658085839473642, 2563415.538494346663356 ], [ 679401.813073195633478, 2541268.193672147579491 ], [ 699910.1370136635378, 2541526.702331620734185 ] ] ] } }
+]
+}

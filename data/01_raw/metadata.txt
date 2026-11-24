@@ -1,0 +1,80 @@
+======================================================================
+  PHASE 1  -  DATA VERIFICATION & METADATA REPORT
+  Generated: 2026-11-24T16:38:17.662638+00:00
+======================================================================
+
+-- RASTER METADATA ---------------------------------------------------
+  file: C:\Users\Divyansh Rajput\Downloads\EPICS Project\data\01_raw\S2_KothriKalan_Rabi_2026_10m.tif
+  file_size_mb: 109.29
+  driver: GTiff
+  width_px: 2079
+  height_px: 2242
+  bands: 9
+  band_names: ['B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B11', 'B12']
+  dtype: float32
+  crs: EPSG:32643
+  epsg: 32643
+  resolution_m: 10.00 x 10.00
+  bounds:
+    left: 679130.0
+    bottom: 2541260.0
+    right: 699920.0
+    top: 2563680.0
+  nodata: nan
+  compress: deflate
+  nan_percent_per_band:
+    B02: 0.00%
+    B03: 0.00%
+    B04: 0.00%
+    B05: 0.00%
+    B06: 0.00%
+    B07: 0.00%
+    B08: 0.00%
+    B11: 0.00%
+    B12: 0.00%
+  value_range_per_band:
+    B02: [0.1073, 0.6728]
+    B03: [0.1195, 0.6723]
+    B04: [0.1147, 0.7216]
+    B05: [0.1346, 0.6457]
+    B06: [0.1155, 0.6113]
+    B07: [0.1165, 0.6590]
+    B08: [0.1128, 0.7421]
+    B11: [0.1109, 0.6600]
+    B12: [0.1092, 0.6661]
+  overall_mean_nan_pct: 0.00%
+
+-- LABEL DATASET SUMMARY ---------------------------------------------
+  total_polygons: 1
+  polygons_per_class: {0: 1}
+
+-- VALIDATION CHECKS -------------------------------------------------
+  [PASS]  Raster file exists  C:\Users\Divyansh Rajput\Downloads\EPICS Project\data\01_raw\S2_KothriKalan_Rabi_2026_10m.tif
+  [PASS]  Band count  got 9, expected 9
+  [PASS]  CRS (EPSG)  got EPSG:32643, expected EPSG:32643
+  [PASS]  Pixel resolution  got 10.00 m x 10.00 m, expected 10.0 m
+  [PASS]  Data type  got float32, expected float32
+  [PASS]  NaN% B02  0.00%  range [0.1073, 0.6728]
+  [PASS]  NaN% B03  0.00%  range [0.1195, 0.6723]
+  [PASS]  NaN% B04  0.00%  range [0.1147, 0.7216]
+  [PASS]  NaN% B05  0.00%  range [0.1346, 0.6457]
+  [PASS]  NaN% B06  0.00%  range [0.1155, 0.6113]
+  [PASS]  NaN% B07  0.00%  range [0.1165, 0.6590]
+  [PASS]  NaN% B08  0.00%  range [0.1128, 0.7421]
+  [PASS]  NaN% B11  0.00%  range [0.1109, 0.6600]
+  [PASS]  NaN% B12  0.00%  range [0.1092, 0.6661]
+  [PASS]  Overall NaN < 50%  mean NaN across bands: 0.00%
+  [PASS]  Label file exists  C:\Users\Divyansh Rajput\Downloads\EPICS Project\data\04_labels\labels.geojson
+  [PASS]  Label CRS  got EPSG:32643
+  [PASS]  Label schema has class_id  ['class_id', 'class_name', 'notes', 'geometry']
+  [PASS]  Label schema has class_name  ['class_id', 'class_name', 'notes', 'geometry']
+
+-- RESULT: ALL CHECKS PASSED
+======================================================================
+
+Handoff notes for Person 2 (Phase 2 - Preprocessing):
+  * Composite is a 9-band Float32 GeoTIFF scaled to [0, 1] reflectance.
+  * Bands: B02, B03, B04, B05, B06, B07, B08, B11, B12.
+  * NaN pixels indicate cloud/shadow-masked areas - fill or mask in Phase 2.
+  * Labels GeoJSON contains class_id (1-5) and class_name attributes.
+  * CRS is EPSG:32643 (UTM 43N) throughout - no reprojection needed.
